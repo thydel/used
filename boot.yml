@@ -1,0 +1,17 @@
+---
+
+- type: self
+  name: used
+  env: thydel
+  remote: git@github.com:thydel/used.git
+  desc: gmk used repos set
+
+- { hub: thydel, token: github/tokens/thydel/hub }
+
+- name: thydel
+  key: &thydel t.delamare@laposte.net
+  configs:
+    user.signingkey: Thierry Delamare (thy) <t.delamare@laposte.net>
+    user.email: *thydel
+
+- { alias: thydel, email: *thydel, full: Thierry Delamare }
